@@ -1,0 +1,43 @@
+.phonebook{
+  border: 1px solid black;
+  height: auto;
+  width: 300px;
+  padding: 20px;
+  padding-top: 10px;
+  margin-left: 50px;
+}
+.form{
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  justify-content: space-between;
+
+}
+.text{
+  margin-top: 0;
+}
+.title{
+  margin-left: 50px;
+}
+.button{
+  margin-top: 1em;
+  border-radius: 50px;
+  border: none;
+  border: 1px solid black;
+  width: 100px;
+  padding: 5px;
+}
+.button:hover{
+  background-color: #1a66d6;
+}
+.contacts{
+  margin-left: 50px;
+  width: 350px;
+}
+.element{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 50px;
+  align-items: center;
+}
