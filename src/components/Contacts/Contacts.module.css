@@ -1,0 +1,13 @@
+.list{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+.listItem{
+    display: flex;
+    justify-content: center;
+}
+.button{
+    width: 50px;
+    height: 20px;
+}

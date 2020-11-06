@@ -1,0 +1,13 @@
+.container{
+    border: 1px black solid;
+    width: 400px;
+    margin-left: 50px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+.title{
+    margin: 10px;
+}
+.button{
+    margin-top: 20px;
+}
