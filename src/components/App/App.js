@@ -1,9 +1,10 @@
 import React, {Component} from 'react';
-import NameForm from './components/NameForm/NameForm'
-import Contacts from './components/Contacts/Contacts'
+import ContactsForm from '../ContactsForm/ContactsForm'
+import Contacts from '../Contacts/ContactList'
 import { v4 as uuidv4 } from 'uuid';
-import Filter from './components/Filter/Filter';
+import Filter from '../Filter/Filter';
 import styles from './App.module.css';
+
 
 class App extends Component {
     state = {
@@ -25,19 +26,7 @@ class App extends Component {
         }
       ],
       filter: '',
-      name: '',
-      number: '',
     }
-  handleGetName = (name) => {
-    this.setState({
-      name: name,
-    })
-  }
-  handleGetNumber = (number) => {
-    this.setState({
-      number: number,
-    })
-  }
   handleGetFilter = (filter) => {
     this.setState({
       filter: filter,
@@ -66,7 +55,7 @@ class App extends Component {
   return (
     <div className="App">
       <h2 className={styles.title}>Phonebook</h2>
-      <NameForm
+      <ContactsForm
       name={this.state.name}
       number={this.state.number}
       handleGetName={this.handleGetName}

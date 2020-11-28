@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
-import styles from './Contacts.module.css'
+import styles from './ContactList.module.css'
+import PropTypes from 'prop-types';
 
 class Contact extends Component{
     onHandleDelete = (e) => {
@@ -14,6 +15,12 @@ class Contact extends Component{
         </li>
     )
     }
+}
+
+Contact.propTypes = {
+    name: PropTypes.string.isRequired,
+    number: PropTypes.string.isRequired,
+    handleDeleteContact: PropTypes.func.isRequired,
 }
 
 export default Contact;

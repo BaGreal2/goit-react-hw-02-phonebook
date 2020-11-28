@@ -1,19 +1,27 @@
 import React, {Component} from 'react';
-import styles from './NameForm.module.css';
+import styles from './ContactsForm.module.css';
 
-class NameForm extends Component{
+class ContactsForm extends Component{
+    state={
+        name: "",
+        number: "",
+    }
     onChangeName = (e) => {
         e.preventDefault()
-        this.props.handleGetName(e.target.value)
+        this.setState({
+            name: e.target.value,
+          })
     }
     onChangeNumber = (e) => {
         e.preventDefault()
-        this.props.handleGetNumber(e.target.value)
+        this.setState({
+            number: e.target.value,
+          })
     }
     onPushContact = (e) => {
         e.preventDefault()
         console.log(e.target)
-        this.props.handlePushContact(this.props.name, this.props.number)
+        this.props.handlePushContact(this.state.name, this.state.number)
     }
     render(){
         const name=this.props.name
@@ -32,4 +40,4 @@ class NameForm extends Component{
     }
 }
 
-export default NameForm;
+export default ContactsForm;
